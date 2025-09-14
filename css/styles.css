@@ -567,3 +567,66 @@ body {
   line-height: 175%;
   letter-spacing: -0.9px;
 }
+
+.modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modal-overlay.is-open {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.modal {
+  width: 1156px;
+  height: 530px;
+  padding: 125px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+
+.form-modal input {
+  width: 465px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  color: #817979;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  padding-left: 25px;
+}
+
+.form-modal .btn-modal {
+  padding: 17px 45px;
+  background-color: #f03957;
+  color: #fff;
+  font-weight: 600;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  border-radius: 10px;
+  width: 468px;
+  height: 66px;
+  cursor: pointer;
+}
+
+.modal-overlay i {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+}

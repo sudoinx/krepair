@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
     <title>Krepair Web Site</title>
   </head>
   <body>
@@ -37,8 +41,46 @@
               <p>по ремонту техники в Москве</p>
 
               <div class="button-service">
-                <a class="red" href="#">Получить консультацию</a>
+                <a class="red" href="#" id="open-modal"
+                  >Получить консультацию</a
+                >
                 <a class="white" href="#">Смотреть прайс-лист</a>
+              </div>
+
+              <div class="modal-overlay" id="modal">
+                <div class="modal">
+                  <a id="close-modal" href="#"
+                    ><i class="ri-close-large-line"></i
+                  ></a>
+                  <form
+                    class="form-modal"
+                    id="form-modal"
+                    onsubmit="return modalForm(this)"
+                    method="post"
+                  >
+                    <div class="form-row">
+                      <div class="form-left">
+                        <input
+                          class="input-left"
+                          type="text"
+                          placeholder="Ваше имя"
+                          id="name"
+                        />
+                        <input
+                          class="input-left"
+                          type="tel"
+                          placeholder="Телефон*"
+                          id="phone"
+                        />
+                        <input
+                          class="btn-modal"
+                          type="submit"
+                          value="Оставить заявку"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
 
