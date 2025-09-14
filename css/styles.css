@@ -14,6 +14,11 @@ body {
   font-size: 18px;
 }
 
+.error {
+  border: 2px solid red !important;
+  color: red;
+}
+
 .container {
   max-width: 1200px;
 }
@@ -498,7 +503,7 @@ body {
   resize: none;
 }
 
-.form a {
+.form .btn-form {
   padding: 17px 45px;
   background-color: #f03957;
   color: #fff;
@@ -506,6 +511,8 @@ body {
   line-height: 175%;
   letter-spacing: -0.9px;
   border-radius: 10px;
+  width: 228px;
+  height: 66px;
 }
 
 .form p {

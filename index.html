@@ -218,7 +218,7 @@
                 </p>
 
                 <div class="info-reviews-two">
-                  <p>Читать полностью</p>
+                  <a href="#"><p>Читать полностью</p></a>
                   <div class="stars">
                     <img src="./assets/images/star1.png" />
                     <img src="./assets/images/star1.png" />
@@ -242,7 +242,7 @@
                 </p>
 
                 <div class="info-reviews-two">
-                  <p>Читать полностью</p>
+                  <a href="#"><p>Читать полностью</p></a>
                   <div class="stars">
                     <img src="./assets/images/star1.png" />
                     <img src="./assets/images/star1.png" />
@@ -266,7 +266,7 @@
                 </p>
 
                 <div class="info-reviews-two">
-                  <p>Читать полностью</p>
+                  <a href="#"><p>Читать полностью</p></a>
                   <div class="stars">
                     <img src="./assets/images/star1.png" />
                     <img src="./assets/images/star1.png" />
@@ -292,32 +292,42 @@
               <p>Оставьте заявку, мы свяжемся с вами и ответим на них</p>
             </div>
 
-            <form class="form">
+            <form
+              class="form"
+              id="formMain"
+              onsubmit=" return mainForm(this)"
+              method="post"
+            >
               <div class="form-row">
                 <div class="form-left">
                   <input
                     class="input-left"
                     type="text"
                     placeholder="Ваше имя"
+                    id="name"
                   />
                   <input
                     class="input-left"
                     type="email"
-                    name="email"
                     placeholder="E-mail"
+                    id="email"
                   />
-                  <input class="input-left" type="tel" placeholder="Телефон*" />
+                  <input
+                    class="input-left"
+                    type="tel"
+                    placeholder="Телефон*"
+                    id="phone"
+                  />
                 </div>
 
                 <div class="form-right">
                   <textarea
                     name="text"
                     placeholder="Опишите проблему и добавьте видео неисправности"
-                    id=""
                   ></textarea>
                 </div>
               </div>
-              <a href="#">Оставить заявку</a>
+              <input class="btn-form" type="submit" value="Оставить заявку" />
               <p>
                 Нажимая на данную кнопку вы соглашаетесь с политикой
                 конфиденциальности
@@ -361,5 +371,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
