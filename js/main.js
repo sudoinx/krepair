@@ -1,41 +1,67 @@
-const forms = document.querySelectorAll("#mainForm, #modalForm");
+const forms = [
+  document.getElementById("form-modal"),
+  document.getElementById("formMain"),
+];
 
-function mainForm(el) {
-  const mail = document.getElementById("email").value;
-  const phone = document.getElementById("phone").value;
-  const name = document.getElementById("name").value;
+function mainForm() {
+  const name = document.getElementById("name");
+  const phone = document.getElementById("phone");
+  const mail = document.getElementById("email");
 
   let error = "";
 
-  if (mail == "" || name == "" || phone == "") {
+  name.classList.remove("error");
+  mail.classList.remove("error");
+  phone.classList.remove("error");
+
+  if (
+    name.value.trim() === "" ||
+    mail.value.trim() === "" ||
+    phone.value.trim() === ""
+  ) {
     error = "Заполните все поля!";
-  } else if (mail.length <= 5 || phone.length <= 5) {
+    if (name.value.trim() === "") name.classList.add("error");
+    if (phone.value.trim() === "") phone.classList.add("error");
+    if (mail.value.trim() === "") mail.classList.add("error");
+  } else if (phone.value.length <= 5 || mail.value.length <= 5) {
     error = "Данные должны быть больше 5 символов!";
+    if (phone.value.trim().length <= 5) phone.classList.add("error");
+    if (mail.value.trim().length <= 5) mail.classList.add("error");
   }
 
-  if (error != "") {
-    error.classList.add("error");
+  if (error !== "") {
+    alert(error);
+    return false;
   } else {
     alert("Ваша заявка успешно отправлена!");
+    return true;
   }
-
-  return false;
 }
 
-function modalForm(item) {
-  const name = document.getElementById("name");
-  const phone = document.getElementById("phone");
+function modalForm() {
+  const name_modal = document.getElementById("name-modal");
+  const phone_modal = document.getElementById("phone-modal");
 
-  if (name == "" || phone == "") {
+  let error = "";
+
+  name_modal.classList.remove("error");
+  phone_modal.classList.remove("error");
+
+  if (name_modal.value === "" || phone_modal.value === "") {
     error = "Заполните все поля!";
-  } else if (phone.length <= 5) {
+    if (name_modal.value === "") name_modal.classList.add("error");
+    if (phone_modal.value === "") phone_modal.classList.add("error");
+  } else if (phone_modal.value.length <= 5) {
     error = "Номер телефона должен быть больше 5 символов!";
+    phone_modal.classList.add("error");
   }
 
-  if (error != "") {
-    error.classList.add("error");
+  if (error !== "") {
+    alert(error);
+    return false;
   } else {
     alert("Ваша заявка успешно отправлена!");
+    return true;
   }
 }
 
