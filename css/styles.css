@@ -112,8 +112,10 @@ body {
 }
 
 .service-left .red:hover {
-  background-color: #b82d44;
-  transition: all 0.5s ease-in-out;
+  border: 2px solid #f03957;
+  background-color: transparent;
+  color: #f03957;
+  transition: all 0.3s ease-in-out;
 }
 
 .service-left .white {
@@ -124,8 +126,9 @@ body {
 }
 
 .service-left .white:hover {
-  background-color: #807d7d;
-  border: 2px solid #807d7d;
+  background-color: #000;
+  border: 2px solid #000;
+  color: #fff;
   transition: all 0.5s ease-in-out;
 }
 
@@ -244,6 +247,18 @@ body {
   padding: 14px 32px;
   border-radius: 8px;
   border: 2px solid #000;
+}
+
+.card-left a:hover {
+  color: #f7f5f5;
+  background-color: #000000;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-right a:hover {
+  color: #f7f5f5;
+  background-color: #000000;
+  transition: all 0.5s ease-in-out;
 }
 
 .advantages {
@@ -589,17 +604,40 @@ body {
 }
 
 .modal {
-  width: 705px;
-  height: 495px;
-  padding: 125px;
+  width: 547px;
+  height: 818px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 1);
   position: relative;
 }
 
+.title-modal h1 {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: #f03957;
+  font-weight: 700;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  padding-top: 70px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.title-modal p {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-weight: 400;
+  text-align: center;
+}
+
 .form-modal input {
   width: 465px;
   padding: 15px;
+  padding-left: 25px;
   border: 1px solid #ccc;
   border-radius: 10px;
   font-size: 16px;
@@ -612,6 +650,25 @@ body {
   padding-left: 25px;
 }
 
+.form-modal textarea {
+  width: 465px;
+  height: 211px;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  color: #817979;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  padding-left: 25px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
 .form-modal .btn-modal {
   padding: 17px 45px;
   background-color: #f03957;
@@ -620,7 +677,7 @@ body {
   line-height: 175%;
   letter-spacing: -0.9px;
   border-radius: 10px;
-  width: 468px;
+  width: 228px;
   height: 66px;
   cursor: pointer;
 }
@@ -629,4 +686,13 @@ body {
   position: absolute;
   top: 25px;
   right: 40px;
+}
+
+.form-modal p {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-size: 10px;
 }

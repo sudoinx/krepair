@@ -50,13 +50,17 @@
 
               <div class="modal-overlay" id="modal">
                 <div class="modal">
+                  <div class="title-modal">
+                    <h1>Оставьте заявку</h1>
+                    <p>Мы свяжемся с вами в ближайшее время</p>
+                  </div>
                   <a id="close-modal" href="#"
                     ><i class="ri-close-large-line"></i
                   ></a>
                   <form
                     class="form-modal"
-                    id="form-modal"
-                    onsubmit="return modalForm(this)"
+                    id="formModal"
+                    onsubmit="return modalForm(event)"
                     method="post"
                   >
                     <div class="form-row">
@@ -69,15 +73,29 @@
                         />
                         <input
                           class="input-left"
+                          type="email"
+                          placeholder="Email"
+                          id="email-modal"
+                        />
+                        <input
+                          class="input-left"
                           type="tel"
                           placeholder="Телефон*"
                           id="phone-modal"
                         />
+                        <textarea
+                          name="text"
+                          placeholder="Опишите проблему и добавьте видео неисправности"
+                        ></textarea>
                         <input
                           class="btn-modal"
                           type="submit"
                           value="Оставить заявку"
                         />
+                        <p>
+                          Нажимая на данную кнопку вы соглашаетесь <br />
+                          с политикой конфиденциальности
+                        </p>
                       </div>
                     </div>
                   </form>
@@ -370,7 +388,12 @@
                   ></textarea>
                 </div>
               </div>
-              <input class="btn-form" type="submit" value="Оставить заявку" />
+              <input
+                class="btn-form"
+                type="submit"
+                value="Оставить заявку"
+                id="submitBtn"
+              />
               <p>
                 Нажимая на данную кнопку вы соглашаетесь с политикой
                 конфиденциальности
