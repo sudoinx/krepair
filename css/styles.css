@@ -184,6 +184,23 @@ body {
   border-radius: 20px;
 }
 
+.services-two {
+  width: 1160px;
+  height: 554px;
+}
+
+.services-three {
+  height: 743px;
+}
+
+.services-four {
+  height: 442px;
+}
+
+.services-five {
+  height: 279px;
+}
+
 .width-services {
   width: 560px;
 }
@@ -548,7 +565,6 @@ body {
 
 .footer-inner {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -695,4 +711,298 @@ body {
   line-height: 175%;
   letter-spacing: -0.9px;
   font-size: 10px;
+}
+
+.widget {
+  padding-top: 45px;
+  margin-left: 80px;
+}
+
+.widget a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  color: #f7f5f5;
+}
+
+.widget span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  color: #f7f5f5;
+}
+
+.services-site {
+  background-color: #525252;
+  height: 3155px;
+  overflow: hidden;
+}
+
+.nav .active {
+  color: #f03957;
+}
+
+.card-service h4 {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-weight: 600;
+}
+
+.card-service div {
+  display: inline-block;
+  margin-right: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-service div:last-child {
+  margin-right: 0;
+}
+
+.card-service div img {
+  margin-right: 38px;
+}
+
+.card-service div p {
+  color: #000;
+  font-weight: 600;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-size: 20px;
+}
+
+.company {
+  margin-bottom: 120px;
+}
+
+.company-title {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.company-title h2 {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
+}
+
+.company-title p {
+  width: 538px;
+  color: #000;
+  font-weight: 600;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+}
+
+.widget-company {
+  padding-top: 45px;
+  margin-left: 80px;
+}
+
+.widget-company a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  color: #a5a4a4;
+}
+
+.widget-company span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  color: #a5a4a4;
+}
+
+.company-card {
+  background-color: #f7f5f5;
+  width: 1161px;
+  height: 237px;
+  border-radius: 20px;
+  padding: 38px 77px 38px 33px;
+  display: flex;
+}
+
+.company-card .subtitle-left {
+  width: 393px;
+}
+
+.company-card .subtitle-right {
+  width: 488px;
+}
+
+.staff {
+  margin-bottom: 120px;
+}
+
+.staff-title h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.staff-title span {
+  color: #f03957;
+}
+
+.staff-cards {
+  display: flex;
+}
+
+.card-staff {
+  width: 367px;
+  height: 235px;
+  background-color: #f7f5f5;
+  border-radius: 20px;
+  padding: 30px 66px 33px 33px;
+}
+
+.card-staff h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+}
+
+.card-staff .subtitle-staff {
+  margin-bottom: 15px;
+}
+
+.card-staff .subtitle-bio {
+  color: #777272;
+  font-size: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.9px;
+  line-height: 175%;
+}
+
+.card-staff .bio-one {
+  width: 296px;
+}
+
+.card-staff .bio-two {
+  width: 303px;
+}
+
+.card-staff .bio-three {
+  width: 303px;
+}
+
+.high-quality-cards {
+  display: flex; /* ставим блоки в одну строку */
+  border-radius: 20px; /* общий радиус */
+  overflow: hidden; /* чтобы углы были единые */
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.high-paragraph-left {
+  background-color: #c4c4c4;
+  height: 330px;
+  width: 565px;
+  padding: 50px 129px 175px 28px;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.high-paragraph-right {
+  padding: 50px 60px 50px 43px;
+  background-color: #f7f5f5;
+  border-bottom-right-radius: 20px;
+  flex: 2;
+}
+
+.high-left {
+  width: 400px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+}
+
+.high-right {
+  width: 533px;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-size: 18px;
+  color: #000;
+}
+
+.high-cards {
+  display: flex;
+  border-radius: 20px; /* общий радиус */
+  overflow: hidden;
+}
+
+.high-cards-left {
+  background-color: #c4c4c4;
+  height: 260px;
+  width: 565px;
+  padding: 50px 138px 105px 28px;
+  border-radius: 20px;
+  flex: 1;
+  position: relative;
+}
+
+.high-cards-left img {
+  bottom: 60px;
+  right: 69px;
+}
+
+.high-paragraph-left {
+  position: relative;
+}
+
+.high-paragraph-left img {
+  bottom: 60px;
+  right: 69px;
+  position: absolute;
+}
+
+.high-cards-left img {
+  position: absolute;
+}
+
+.high-cards-right {
+  padding: 50px 60px 50px 50px;
+  background-color: #f7f5f5;
+  border-bottom-right-radius: 20px;
+  flex: 2;
+}
+
+.high-card-right {
+  width: 532px;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-size: 18px;
+  color: #000;
+}
+
+.high-card-left {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  width: 399px;
 }

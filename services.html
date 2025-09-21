@@ -16,11 +16,13 @@
       <div class="container">
         <div class="header-inner">
           <div class="header-logo">
-            <img src="./assets/images/logo/logo.svg" />
+            <a href="./index.html"
+              ><img src="./assets/images/logo/logo.svg"
+            /></a>
           </div>
 
           <nav class="nav">
-            <a href="./services.html">Услуги</a>
+            <a href="#" class="active">Услуги</a>
             <a href="#">Прайс-лист</a>
             <a href="./about-company.html">О компании</a>
             <a href="#">Контакты</a>
@@ -34,89 +36,18 @@
     </header>
 
     <main class="main">
-      <section class="service">
-        <div class="container">
-          <div class="service-inner">
-            <div class="service-left">
-              <h1>Сервисный центр</h1>
-              <p>по ремонту техники в Москве</p>
-
-              <div class="button-service">
-                <a class="red" href="#" id="open-modal"
-                  >Получить консультацию</a
-                >
-                <a class="white" href="#">Смотреть прайс-лист</a>
-              </div>
-
-              <div class="modal-overlay" id="modal">
-                <div class="modal">
-                  <div class="title-modal">
-                    <h1>Оставьте заявку</h1>
-                    <p>Мы свяжемся с вами в ближайшее время</p>
-                  </div>
-                  <a id="close-modal" href="#"
-                    ><i class="ri-close-large-line"></i
-                  ></a>
-                  <form
-                    class="form-modal"
-                    id="formModal"
-                    onsubmit="return modalForm(event)"
-                    method="post"
-                  >
-                    <div class="form-row">
-                      <div class="form-left">
-                        <input
-                          class="input-left"
-                          type="text"
-                          placeholder="Ваше имя"
-                          id="name-modal"
-                        />
-                        <input
-                          class="input-left"
-                          type="email"
-                          placeholder="Email"
-                          id="email-modal"
-                        />
-                        <input
-                          class="input-left"
-                          type="tel"
-                          placeholder="Телефон*"
-                          id="phone-modal"
-                        />
-                        <textarea
-                          name="text"
-                          placeholder="Опишите проблему и добавьте видео неисправности"
-                        ></textarea>
-                        <input
-                          class="btn-modal"
-                          type="submit"
-                          value="Оставить заявку"
-                        />
-                        <p>
-                          Нажимая на данную кнопку вы соглашаетесь <br />
-                          с политикой конфиденциальности
-                        </p>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-            <div class="service-right">
-              <img src="./assets/images/section1.png" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="services" id="services">
+      <section class="services-site" id="services">
         <div class="container">
           <div class="services-inner">
+            <div class="widget">
+              <a href="index.html">Главная</a>
+              <span>/</span>
+              <a href="#">Услуги</a>
+            </div>
             <div class="services-title">
               <h2>
-                Наши услуги <br />
-                <span>для вас</span>
+                услуги нашего <br />
+                <span>сервиса</span>
               </h2>
               <p>
                 Наша компания оказывает полный спектр услуг, имеет надежную
@@ -126,78 +57,129 @@
             </div>
 
             <div class="services-cards">
-              <div class="services-card">
-                <div class="card-left">
+              <div class="services-card services-one">
+                <div class="card-left card-service">
                   <h4>Ремонт <span>аудио техники</span></h4>
-                  <p class="width-services">
-                    Мы выполняем качественный ремонт аудиотехники, включая
-                    колонки, усилители и прочее оборудование, выдаем гарантию и
-                    имеем необходимые запчасти в наличие
-                  </p>
-                  <a href="#">Подробнее</a>
+                  <div>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт микрофонов
+                    </p>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт рекордеров
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт
+                      радиосистем
+                    </p>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт
+                      радиосинхронизаторов
+                    </p>
+                  </div>
                 </div>
                 <div class="card-right">
-                  <img src="./assets/images/img_thumb_big 1.png" />
+                  <img src="./assets/images/onepng.png" />
                 </div>
               </div>
 
-              <div class="services-card">
-                <div class="card-left">
-                  <img src="./assets/images/2638 1.png" />
-                </div>
-                <div class="card-right">
+              <div class="services-card services-two">
+                <div class="card-left card-service">
                   <h4>Ремонт <span>фото/видео техники</span></h4>
-                  <p class="width-services">
-                    Осуществляем ремонт современной цифровой фото и видео
-                    аппаратура, проводимый первоклассными инженерами
-                  </p>
-                  <a href="#">Подробнее</a>
+                  <div>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт
+                      видеосендеров
+                    </p>
+                    <p class="paragraph-text">
+                      <img src="./assets/images/Arrow 6.png" />Ремонт вспышек
+                      для фотоаппаратов
+                    </p>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт
+                      квадрокоптеров
+                    </p>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт накамерных
+                      мониторов
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт объективов
+                    </p>
+                    <p class="paragraph-text">
+                      <img src="./assets/images/Arrow 6.png" />Ремонт
+                      портативных осветителей
+                    </p>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт
+                      стабилизаторов
+                    </p>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт
+                      осветителей
+                    </p>
+                  </div>
+                </div>
+                <div class="card-right сard-image">
+                  <img src="./assets/images/two.png" />
                 </div>
               </div>
 
-              <div class="services-card">
-                <div class="card-left">
+              <div class="services-card services-three">
+                <div class="card-left card-service">
                   <h4>Ремонт <span>телефонов</span></h4>
-                  <p class="width-services">
-                    Мы предоставляем полный спектр услуг по обслуживанию и
-                    ремонту мобильных устройств марки Apple
-                  </p>
-                  <a href="#">Подробнее</a>
                 </div>
-                <div class="card-right">
-                  <img
-                    src="./assets/images/a1c87d548070e1d7470da1c7cf6ddcad 1.png"
-                  />
+                <div class="card-right card-service">
+                  <img src="./assets/images/three.png" />
                 </div>
               </div>
 
-              <div class="services-card">
-                <div class="card-left">
-                  <img
-                    src="./assets/images/giroskuter-vnedorozhnyy-kiwano-ko-x-es03-usa-8-5-red-4-500x500 1.png"
-                  />
-                </div>
-                <div class="card-right">
+              <div class="services-card services-four">
+                <div class="card-left card-service">
                   <h4>Ремонт <span>электротранспорта</span></h4>
-                  <p class="width-services">
-                    Осуществляем ремонт электровелосипедов, сегвеев, моноколес,
-                    электросамокатов, гироскутеров и пр.
-                  </p>
-                  <a href="#">Подробнее</a>
+                  <div>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт сегвеев
+                    </p>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт моноколес
+                    </p>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт
+                      гироскутеров
+                    </p>
+                  </div>
+                  <div class="bottom">
+                    <p class="item">
+                      <img src="./assets/images/Arrow 6.png" />Ремонт
+                      электросамокатов
+                    </p>
+                    <p class="item">
+                      <img src="./assets/images/Arrow 6.png" />Ремонт
+                      электровелосипедов
+                    </p>
+                  </div>
+                </div>
+                <div class="card-right">
+                  <img src="./assets/images/four.png" />
                 </div>
               </div>
 
-              <div class="services-card">
-                <div class="card-left">
+              <div class="services-card services-five">
+                <div class="card-left card-service">
                   <h4>Ремонт <span>телевизоров</span></h4>
-                  <p class="width-services">
-                    Сервисный центр Krepair выполнит профессиональный ремонт
-                    телевизоров любых марок и моделей
-                  </p>
-                  <a href="#">Подробнее</a>
+                  <div>
+                    <p>
+                      <img src="./assets/images/Arrow 6.png" />Ремонт
+                      телевизоров
+                    </p>
+                  </div>
                 </div>
                 <div class="card-right">
-                  <img src="./assets/images/13003024433182 2.png" />
+                  <img src="./assets/images/five.png" />
                 </div>
               </div>
             </div>
