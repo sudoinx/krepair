@@ -27,6 +27,10 @@ body {
   padding: 25px 0 76px 0;
 }
 
+.header-contacts {
+  padding: 25px 0 60px 0;
+}
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -545,6 +549,14 @@ body {
   border-radius: 10px;
   width: 228px;
   height: 66px;
+  cursor: pointer;
+}
+
+.form .btn-form:hover {
+  border: 2px solid #f03957;
+  background-color: transparent;
+  color: #f03957;
+  transition: all 0.3s ease-in-out;
 }
 
 .form p {
@@ -698,6 +710,13 @@ body {
   cursor: pointer;
 }
 
+.form-modal .btn-modal:hover {
+  border: 2px solid #f03957;
+  background-color: transparent;
+  color: #f03957;
+  transition: all 0.3s ease-in-out;
+}
+
 .modal-overlay i {
   position: absolute;
   top: 25px;
@@ -806,8 +825,32 @@ body {
 }
 
 .widget-company {
-  padding-top: 45px;
+  padding-top: 60px;
   margin-left: 80px;
+}
+
+.widget-contacts {
+  padding-top: 60px;
+  margin-left: 80px;
+  padding-bottom: 40px;
+}
+
+.widget-contacts a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  color: #a5a4a4;
+}
+
+.widget-contacts span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  color: #a5a4a4;
 }
 
 .widget-company a {
@@ -913,6 +956,7 @@ body {
   overflow: hidden; /* чтобы углы были единые */
   margin-bottom: 50px;
   position: relative;
+  overflow: hidden;
 }
 
 .high-paragraph-left {
@@ -1005,4 +1049,246 @@ body {
   line-height: 175%;
   letter-spacing: -0.9px;
   width: 399px;
+}
+
+.maps {
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  overflow: hidden;
+  border: none;
+}
+
+.card-map {
+  width: 463px;
+  height: 323px;
+  background-color: #525252;
+  border-radius: 15px;
+  padding: 50px 23px 50px 54px;
+  position: absolute;
+  z-index: 999;
+  top: 120px;
+  left: 379px;
+}
+
+.card-map img {
+  padding-bottom: 33px;
+}
+
+.card-map p {
+  padding-bottom: 25px;
+  color: #efefef;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+
+.card-map .mailto {
+  color: #efefef;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  padding-bottom: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-map .telephone {
+  font-size: 20px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  padding-bottom: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #dedcdc;
+}
+
+.card-map a[href^="mailto:"] {
+  color: #efefef;
+}
+
+.card-map a[href^="tel:"] {
+  color: #efefef;
+}
+
+.card-map h4 {
+  padding-bottom: 38px;
+  color: #f5f5f5;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
+}
+
+.card-map span {
+  color: #f03957;
+}
+
+.card-map-contacts {
+  width: 571px;
+  height: 593px;
+  background-color: #525252;
+  border-radius: 15px;
+  padding: 50px 23px 50px 54px;
+  position: absolute;
+  z-index: 999;
+  top: 120px;
+  left: 379px;
+}
+
+.card-map-contacts h4 {
+  padding-bottom: 38px;
+  color: #f5f5f5;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
+}
+
+.card-map-contacts span {
+  color: #f03957;
+}
+
+.card-map-contacts p {
+  padding-bottom: 30px;
+  color: #efefef;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+
+.card-map-contacts .mailto {
+  color: #efefef;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 30px;
+}
+
+.card-map-contacts .telephone {
+  font-size: 30px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  padding-bottom: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #dedcdc;
+}
+
+.card-map-contacts a[href^="mailto:"] {
+  color: #efefef;
+  color: #efefef;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 30px;
+  text-decoration: none;
+}
+
+.card-map-contacts a[href^="tel:"] {
+  color: #dedcdc;
+  font-size: 30px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  padding-bottom: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.card-map-contacts a {
+  color: #efefef;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  text-decoration: underline;
+}
+
+.requisites {
+  margin-bottom: 120px;
+}
+
+.requisites-title {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  align-items: center;
+}
+
+.requisites-title h4 {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+}
+
+.requisites-title span {
+  color: #f03957;
+}
+
+.requisites-title p {
+  width: 565px;
+  font-size: 18px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-weight: 700;
+}
+
+.information-requisites {
+  margin-bottom: 120px;
+}
+
+.information-requisites-card {
+  width: 1160px;
+  height: 769px;
+  border-radius: 20px;
+  background-color: #f7f5f5;
+  padding: 50px 43px 50px 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.requisites-left h5 {
+  padding-bottom: 40px;
+  color: #000;
+  font-size: 20px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-weight: 600;
+}
+
+.requisites-right p {
+  padding-bottom: 40px;
+  color: #000;
+  font-size: 18px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-weight: 400;
+}
+
+.legal {
+  width: 523px;
 }
