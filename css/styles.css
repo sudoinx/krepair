@@ -1292,3 +1292,47 @@ body {
 .legal {
   width: 523px;
 }
+
+.error-site {
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.error-inner h3 {
+  color: #f03957;
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.error-inner h1 {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 250px;
+  font-weight: 700;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+}
+
+.error-inner p {
+  color: #000;
+  width: 500px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  padding-bottom: 70px;
+}
+
+.error-inner a {
+  border-radius: 10px;
+  background-color: #f03957;
+  color: #fff;
+  padding: 17px 34px;
+  font-size: 18px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-weight: 600;
+}

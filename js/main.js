@@ -95,6 +95,7 @@ document.getElementById("formModal").addEventListener("submit", function () {
 forms.forEach((form) => {
   form.addEventListener("submit", function (event) {
     event.preventDefault();
+    window.location.href = "/404error.html";
   });
 });
 
