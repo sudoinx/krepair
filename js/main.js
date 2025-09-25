@@ -3,36 +3,60 @@ const forms = [
   document.getElementById("formMain"),
 ];
 
-document.getElementById("formMain").addEventListener("submit", function () {
-  const name = document.getElementById("name");
-  const phone = document.getElementById("phone");
-  const mail = document.getElementById("email");
+forms.forEach((form) => {
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    // window.location.href = "/404error.html";
+  });
+});
 
-  name.classList.remove("error");
-  phone.classList.remove("error");
-  mail.classList.remove("error");
+//Main Form
+
+document.getElementById("formMain").addEventListener("submit", function () {
+  const name_form = document.getElementById("name");
+  const phone_form = document.getElementById("phone");
+  const email_form = document.getElementById("email");
+  const textarea_form = document.getElementById("textarea-form");
+
+  name_form.classList.remove("error");
+  phone_form.classList.remove("error");
+  email_form.classList.remove("error");
+  textarea_form.classList.remove("error");
 
   let error = false;
 
-  if (name.value.trim() === "") {
-    name.classList.add("error");
-    error = true;
-  }
-  if (phone.value.trim() === "") {
-    phone.classList.add("error");
-    error = true;
-  }
-  if (mail.value.trim() === "") {
-    mail.classList.add("error");
+  if (name_form.value.trim() === "") {
+    name_form.classList.add("error");
     error = true;
   }
 
-  if (phone.value.trim().length > 0 && phone.value.trim().length < 5) {
-    phone.classList.add("error");
+  if (email_form.value.trim() === "") {
+    email_form.classList.add("error");
     error = true;
   }
-  if (mail.value.trim().length > 0 && mail.value.trim().length < 5) {
-    mail.classList.add("error");
+
+  if (phone_form.value.trim() === "") {
+    phone_form.classList.add("error");
+    error = true;
+  }
+
+  if (textarea_form.value.trim() === "") {
+    textarea_form.classList.add("error");
+    error = true;
+  }
+
+  if (
+    phone_form.value.trim().length > 0 &&
+    phone_form.value.trim().length < 5
+  ) {
+    phone_form.classList.add("error");
+    error = true;
+  }
+  if (
+    email_form.value.trim().length > 0 &&
+    email_form.value.trim().length < 5
+  ) {
+    email_form.classList.add("error");
     error = true;
   }
 
@@ -44,14 +68,18 @@ document.getElementById("formMain").addEventListener("submit", function () {
   }
 });
 
+// Modal Form
+
 document.getElementById("formModal").addEventListener("submit", function () {
   const name_modal = document.getElementById("name-modal");
   const phone_modal = document.getElementById("phone-modal");
   const email_modal = document.getElementById("email-modal");
+  const textarea_modal = document.getElementById("textarea");
 
   name_modal.classList.remove("error");
   phone_modal.classList.remove("error");
   email_modal.classList.remove("error");
+  textarea_modal.classList.remove("error");
 
   let error = false;
 
@@ -60,12 +88,18 @@ document.getElementById("formModal").addEventListener("submit", function () {
     error = true;
   }
 
+  if (email_modal.value.trim() === "") {
+    email_modal.classList.add("error");
+    error = true;
+  }
+
   if (phone_modal.value.trim() === "") {
     phone_modal.classList.add("error");
     error = true;
   }
-  if (email_modal.value.trim() === "") {
-    email_modal.classList.add("error");
+
+  if (textarea_modal.value.trim() === "") {
+    textarea_modal.classList.add("error");
     error = true;
   }
 
@@ -92,12 +126,7 @@ document.getElementById("formModal").addEventListener("submit", function () {
   }
 });
 
-forms.forEach((form) => {
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    window.location.href = "/404error.html";
-  });
-});
+// Modal
 
 const closeModal = document.getElementById("close-modal");
 const modal = document.getElementById("modal");

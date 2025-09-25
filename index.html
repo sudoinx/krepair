@@ -85,6 +85,7 @@
                         />
                         <textarea
                           name="text"
+                          id="textarea"
                           placeholder="Опишите проблему и добавьте видео неисправности"
                         ></textarea>
                         <input
@@ -356,7 +357,7 @@
             <form
               class="form"
               id="formMain"
-              onsubmit=" return mainForm(event)"
+              onsubmit=" return mainForm()"
               method="post"
             >
               <div class="form-row">
@@ -366,27 +367,25 @@
                     type="text"
                     placeholder="Ваше имя"
                     id="name"
-                    required
                   />
                   <input
                     class="input-left"
                     type="email"
                     placeholder="E-mail"
                     id="email"
-                    required
                   />
                   <input
                     class="input-left"
                     type="tel"
                     placeholder="Телефон*"
                     id="phone"
-                    required
                   />
                 </div>
 
                 <div class="form-right">
                   <textarea
                     name="text"
+                    id="textarea-form"
                     placeholder="Опишите проблему и добавьте видео неисправности"
                   ></textarea>
                 </div>
