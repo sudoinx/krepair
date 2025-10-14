@@ -3,69 +3,69 @@ const forms = [
   document.getElementById("formMain"),
 ];
 
-forms.forEach((form) => {
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    // window.location.href = "/404error.html";
+// Main Form
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("formMain");
+  if (!form) return;
+
+  form.addEventListener("submit", function (e) {
+    const name_form = document.getElementById("name");
+    const phone_form = document.getElementById("phone");
+    const email_form = document.getElementById("email");
+    const textarea_form = document.getElementById("textarea-form");
+
+    [name_form, phone_form, email_form, textarea_form].forEach((el) => {
+      if (el) el.classList.remove("error");
+    });
+
+    let error = false;
+
+    if (name_form && name_form.value.trim() === "") {
+      name_form.classList.add("error");
+      error = true;
+    }
+
+    if (email_form && email_form.value.trim() === "") {
+      email_form.classList.add("error");
+      error = true;
+    }
+
+    if (phone_form && phone_form.value.trim() === "") {
+      phone_form.classList.add("error");
+      error = true;
+    }
+
+    if (textarea_form && textarea_form.value.trim() === "") {
+      textarea_form.classList.add("error");
+      error = true;
+    }
+
+    if (
+      phone_form &&
+      phone_form.value.trim().length > 0 &&
+      phone_form.value.trim().length < 5
+    ) {
+      phone_form.classList.add("error");
+      error = true;
+    }
+
+    if (
+      email_form &&
+      email_form.value.trim().length > 0 &&
+      email_form.value.trim().length < 5
+    ) {
+      email_form.classList.add("error");
+      error = true;
+    }
+
+    if (error) {
+      e.preventDefault();
+      const firstErr = document.querySelector(".error");
+      if (firstErr) firstErr.focus();
+    } else {
+    }
   });
-});
-
-//Main Form
-
-document.getElementById("formMain").addEventListener("submit", function () {
-  const name_form = document.getElementById("name");
-  const phone_form = document.getElementById("phone");
-  const email_form = document.getElementById("email");
-  const textarea_form = document.getElementById("textarea-form");
-
-  name_form.classList.remove("error");
-  phone_form.classList.remove("error");
-  email_form.classList.remove("error");
-  textarea_form.classList.remove("error");
-
-  let error = false;
-
-  if (name_form.value.trim() === "") {
-    name_form.classList.add("error");
-    error = true;
-  }
-
-  if (email_form.value.trim() === "") {
-    email_form.classList.add("error");
-    error = true;
-  }
-
-  if (phone_form.value.trim() === "") {
-    phone_form.classList.add("error");
-    error = true;
-  }
-
-  if (textarea_form.value.trim() === "") {
-    textarea_form.classList.add("error");
-    error = true;
-  }
-
-  if (
-    phone_form.value.trim().length > 0 &&
-    phone_form.value.trim().length < 5
-  ) {
-    phone_form.classList.add("error");
-    error = true;
-  }
-  if (
-    email_form.value.trim().length > 0 &&
-    email_form.value.trim().length < 5
-  ) {
-    email_form.classList.add("error");
-    error = true;
-  }
-
-  if (!error) {
-    alert("Ваша заявка успешно отправлена!");
-    return true;
-  } else {
-    return false;
-  }
 });
 
 // Modal Form
@@ -126,16 +126,41 @@ document.getElementById("formModal").addEventListener("submit", function () {
   }
 });
 
-// Modal
+// Forms
 
-const closeModal = document.getElementById("close-modal");
-const modal = document.getElementById("modal");
-const openModal = document.getElementById("open-modal");
-
-closeModal.addEventListener("click", function () {
-  modal.classList.remove("is-open");
+forms.forEach((form) => {
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    event.target.reset();
+  });
 });
 
-openModal.addEventListener("click", function () {
-  modal.classList.add("is-open");
+// Modal
+
+const modalEvents = [
+  {
+    element: openModal,
+    event: "click",
+    handler: function () {
+      modal.classList.add("is-open");
+    },
+  },
+
+  {
+    element: closeModal,
+    event: "click",
+    handler: function () {
+      modal.classList.remove("is-open");
+    },
+  },
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      modal.classList.remove("is-open");
+    }
+  }),
+];
+
+modalEvents.forEach(({ element, event, handler }) => {
+  element.addEventListener(event, handler);
 });

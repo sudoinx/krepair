@@ -21,7 +21,7 @@
 
           <nav class="nav">
             <a href="./services.html">Услуги</a>
-            <a href="#">Прайс-лист</a>
+            <a href="./price-list.html">Прайс-лист</a>
             <a href="./about-company.html">О компании</a>
             <a href="./contacts.html">Контакты</a>
           </nav>
@@ -42,10 +42,10 @@
               <p>по ремонту техники в Москве</p>
 
               <div class="button-service">
-                <a class="red" href="#" id="open-modal"
-                  >Получить консультацию</a
+                <a class="red" href="#" id="openModal">Получить консультацию</a>
+                <a class="white" href="./price-list.html"
+                  >Смотреть прайс-лист</a
                 >
-                <a class="white" href="#">Смотреть прайс-лист</a>
               </div>
 
               <div class="modal-overlay" id="modal">
@@ -54,15 +54,10 @@
                     <h1>Оставьте заявку</h1>
                     <p>Мы свяжемся с вами в ближайшее время</p>
                   </div>
-                  <a id="close-modal" href="#"
+                  <a id="closeModal" href="#"
                     ><i class="ri-close-large-line"></i
                   ></a>
-                  <form
-                    class="form-modal"
-                    id="formModal"
-                    onsubmit="return modalForm(event)"
-                    method="post"
-                  >
+                  <form class="form-modal" id="formModal" method="post">
                     <div class="form-row">
                       <div class="form-left">
                         <input
@@ -354,12 +349,7 @@
               <p>Оставьте заявку, мы свяжемся с вами и ответим на них</p>
             </div>
 
-            <form
-              class="form"
-              id="formMain"
-              onsubmit=" return mainForm()"
-              method="post"
-            >
+            <form class="form" id="formMain" method="post">
               <div class="form-row">
                 <div class="form-left">
                   <input
@@ -441,7 +431,7 @@
 
           <div class="footer-left">
             <ul>
-              <li><a href="#">Прайс-лист</a></li>
+              <li><a href="./price-list.html">Прайс-лист</a></li>
               <li><a href="./about-company.html">О компании</a></li>
               <li><a href="./contacts.html">Контакты</a></li>
             </ul>

@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0 auto;
   text-decoration: none;
-  list-style: none;
 }
 
 html,
@@ -19,9 +18,28 @@ body {
   color: red;
 }
 
+/* WIDGET */
+
+.widget-contacts span {
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.widget-company span {
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.widget span {
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
 .container {
   max-width: 1200px;
 }
+
+/* HEADER */
 
 .header {
   padding: 25px 0 76px 0;
@@ -591,6 +609,7 @@ body {
   margin-bottom: 20px;
   line-height: 175%;
   letter-spacing: -0.9px;
+  list-style: none;
 }
 
 .footer-center li {
@@ -600,6 +619,7 @@ body {
   margin-bottom: 20px;
   line-height: 175%;
   letter-spacing: -0.9px;
+  list-style: none;
 }
 
 .footer-right li {
@@ -609,6 +629,7 @@ body {
   margin-bottom: 20px;
   line-height: 175%;
   letter-spacing: -0.9px;
+  list-style: none;
 }
 
 .modal-overlay {
@@ -1059,6 +1080,7 @@ body {
 .map iframe {
   overflow: hidden;
   border: none;
+  display: block;
 }
 
 .card-map {
@@ -1336,3 +1358,61 @@ body {
   letter-spacing: -0.9px;
   font-weight: 600;
 }
+
+/* .price-list-title h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  padding: 0 80px;
+}
+
+.price-list-title span {
+  color: #f03957;
+}
+
+.price-list-height {
+  height: 416px;
+}
+
+.price-list-card {
+  display: flex;
+  border-bottom: 1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf;
+  padding: 60px 0;
+}
+
+.price-left h5 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+}
+
+.price-left p {
+  font-size: 20px;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+  font-weight: 600;
+}
+
+.price-right li {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: -0.9px;
+} */
+
+/* 
+@media (min-width: 768px) {
+  .header img {
+    width: 118px;
+  }
+  .nav a {
+    margin-right: 39px;
+  }
+} */
